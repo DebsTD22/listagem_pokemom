@@ -6,6 +6,11 @@
    object-fit: cover;
 }
 
+main {
+    position: fixed;
+    z-index: 0;
+}
+
 #sidebar{
     display: flex;
     flex-direction: column;
@@ -13,6 +18,10 @@
     background-color: aqua;
     height: 100vh;
     border-radius: 1rem;
+    position: relative;
+    width:0;
+    transition: all .5s;
+    z-index: 2;
 }
 
 @media screen and (max-width: 992px){
@@ -23,9 +32,137 @@
         background-color: aqua;
         height: 100vh;
         border-radius: 0 1rem 1rem 0;
+        width: 0;
+        transition: all .5s;
+        z-index: 2;
     }
 }
 
+#user{
+    text-align: center;
+    gap: 8px;
+    margin: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#user_infos{
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+#side_itens{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.side_itens{
+    
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.side_itens.active {
+    background-color: #D1D7E3;
+}
+
+.side_itens:hover:not(.active), #logout_btn:hover{
+    background-color: #F6F8FC;
+}
+
+.side_itens a{
+    text-decoration: none;
+    display: flex;
+    color: #000;
+    gap: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.side_itens.active a{
+    color: #F6F8FC;
+}
+
+.side_itens a i{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#logout {
+    border-top: 1px solid #F6F8FC;
+    padding: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open_btn {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#icon_open_btn {
+    transition: transform .3s ease;
+    rotate: 90deg;
+}
+
+#open_btn.open_sidebar #icon_open_btn {
+    transform: rotate(90deg);
+}
+
+.item_description {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 0px;
+}
+
+#sidebar.open_sidebar{
+    width: 15%;
+    z-index: 2;
+}
+
+#sidebar.open_sidebar .item_description {
+    width: 150px;
+    height: auto;
+}
 
 
 

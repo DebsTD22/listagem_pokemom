@@ -27,10 +27,10 @@
             <div id="sidebar_content">
                 <div id="user">
                     <img src="assets/img/avatar.jpg" id="user_avatar" alt="avatar">
-                    <p id="user_infos">user</p>
+                    <p id="user_infos">User</p>
                 </div>
                 <div id="side_itens">
-                   <p class="side_itens">
+                   <p class="side_itens active">
                         <a href="#">
                             <i class="fa-solid fa-house"></i>
                             <span class="item_description">Home</span>
@@ -39,42 +39,44 @@
                    <p class="side_itens">
                     <a href="#">
                         <i class="fa-solid fa-star"></i>
-                        <span class="item_description">Favoritos</span>
+                        <span class="item_description">Favorites</span>
                     </a>
                     </p>
                     <p class="side_itens">
                         <a href="#">
                             <i class="fa-solid fa-book"></i>
-                            <span class="item_description">Coleção</span>
+                            <span class="item_description">Collection</span>
                         </a>
                    </p>
                    <p class="side_itens">
                     <a href="#">
                         <i class="fa-solid fa-gear"></i>
-                        <span class="item_description">Configurações</span>
+                        <span class="item_description">Settings</span>
                     </a>
                     </p>
                     <p class="side_itens">
                     <a href="#">
                         <i class="fa-solid fa-bell"></i>
-                        <span class="item_description">Notificações</span>
+                        <span class="item_description">Notifications</span>
                     </a>
                     </p>
                 </div>
-                <button id="open_menu"> 
-                    <i id="icon_open_menu" class="fa-solid fa-bars"></i>
-                </button>
+                
             </div>
             
             <div id="logout">
-                <button id="logout_menu">
+                <button id="logout_btn">
                     <i class="fa-solid fa-right-to-bracket"></i>
                     <span class="item_description">Login</span>
                 </button>
             </div>
             
         </nav>
+        
         <main>
+            <button id="open_btn" class="open_sidebar"> 
+                <i id="icon_open_btn" class="fa-solid fa-bars"></i>
+            </button>
             <h1>Pokedex</h1>
             <ol class="pokemons">
                 <li class="pokemon">
@@ -94,5 +96,6 @@
     </section>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
