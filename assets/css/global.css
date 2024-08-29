@@ -9,6 +9,7 @@ body{
 
 @media screen and (min-width: 992px){
     .content{
+        display: flex;
         max-width: 992px;
         margin: 1rem auto;
         height: auto;
@@ -16,7 +17,8 @@ body{
     }
 }
 .content {
-    padding: 1rem;
+    display: flex;
+    padding: 0;
     background-color: #fff;
     height: 100vh;
 }
