@@ -23,77 +23,23 @@
 </head>
 <body>
     <section id="content">
-        <div id="black"></div>
-        <nav id="sidebar">
-            <div id="sidebar_content">
-                <div id="user">
-                    <img src="assets/img/avatar.jpg" id="user_avatar" alt="avatar">
-                    <p id="user_infos">User</p>
-                </div>
-                <div id="side_itens">
-                   <p class="side_itens" class="active">
-                        <a href="#">
-                            <i class="fa-solid fa-house"></i>
-                            <span class="item_description">Home</span>
-                        </a>
-                   </p>
-                   <p class="side_itens">
-                    <a href="#">
-                        <i class="fa-solid fa-star"></i>
-                        <span class="item_description">Favorites</span>
-                    </a>
-                    </p>
-                    <p class="side_itens">
-                        <a href="#">
-                            <i class="fa-solid fa-book"></i>
-                            <span class="item_description">Collection</span>
-                        </a>
-                   </p>
-                   <p class="side_itens">
-                    <a href="#">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="item_description">Settings</span>
-                    </a>
-                    </p>
-                    <p class="side_itens">
-                    <a href="#">
-                        <i class="fa-solid fa-bell"></i>
-                        <span class="item_description">Notifications</span>
-                    </a>
-                    </p>
-                    
-                </div>
-                <button id="close_btn">
-                    <i id="icon_close_btn" class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            
-            <div id="logout">
-                <button id="logout_btn">
-                    <i class="fa-solid fa-right-to-bracket"></i>
-                    <span class="item_description">Login</span>
-                </button>
-            </div>
-            
-        </nav>
-        
         <main>
-            <button id="open_btn" class="open_sidebar"> 
-                <i id="icon_open_btn" class="fa-solid fa-bars"></i>
-            </button>
             <h1>Pokedex</h1>
             <ol class="pokemons">
-                <li class="pokemon">
-                    <span class="number">#001</span>
-                    <samp class="name">Bulbasaur</samp>
-                    <div class="detail">
-                        <ol class="types">
-                            <li class="type">grass</li>
-                            <li class="type">poison</li>
-                        </ol>
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"" alt="Bulbasaur">
-                    </div>
-                </li>
+                <button class="learn_more">
+                    <li class="pokemon">
+                        <span class="number">#001</span>
+                        <samp class="name">Bulbasaur</samp>
+                        <div class="detail">
+                            <ol class="types">
+                                <li class="type">grass</li>
+                                <li class="type">poison</li>
+                            </ol>
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"" alt="Bulbasaur">
+                        </div>
+                    </li>
+                </button>
+                
                 <li class="pokemon">
                     <span class="number">#001</span>
                     <samp class="name">Bulbasaur</samp>
@@ -106,12 +52,9 @@
                     </div>
                 </li>
             </ol>
-            
         </main>
-        
     </section>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/menu.js"></script>
 </body>
 </html>

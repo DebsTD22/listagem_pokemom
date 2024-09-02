@@ -18,7 +18,7 @@ body{
 }
 #content {
     display: flex;
-    padding: 0;
+    padding: 15px;
     background-color: #fff;
     height: 100vh;
 }
