@@ -15,27 +15,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     border-radius: 1rem;
     position: relative;
-    width:0;
+    width:0px;
     transition: all .5s;
-    z-index: 2;
-}
-
-@media screen and (max-width: 992px){
-    #sidebar{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: aqua;
-        height: 100vh;
-        border-radius: 0 1rem 1rem 0;
-        width: 0;
-        transition: all .5s;
-        z-index: 2;
-    }
+    z-index: 3;
+    position: relative;
 }
 
 #user{
@@ -65,7 +52,6 @@ main {
 }
 
 .side_itens{
-    
     border-radius: 8px;
     padding: 14px;
     cursor: pointer;
@@ -139,12 +125,8 @@ main {
 
 #icon_open_btn {
     transition: transform .3s ease;
-    rotate: 90deg;
 }
 
-#open_btn.open_sidebar #icon_open_btn {
-    transform: rotate(90deg);
-}
 
 .item_description {
     width: 0;
@@ -154,9 +136,32 @@ main {
     height: 0px;
 }
 
-#sidebar.open_sidebar{
-    width: 15%;
-    z-index: 2;
+@media screen and (max-width: 376px){
+    #sidebar.open_sidebar{
+        width: 100%;
+        z-index: 3;
+    }
+}
+
+@media screen and (min-width: 425px){
+    #sidebar.open_sidebar{
+        width: 50%;
+        z-index: 3;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #sidebar.open_sidebar{
+        width: 35%;
+        z-index: 3;
+    }
+}
+
+@media screen and (min-width: 770px){
+    #sidebar.open_sidebar{
+        width: 25%;
+        z-index: 3;
+    }
 }
 
 #sidebar.open_sidebar .item_description {
@@ -164,5 +169,21 @@ main {
     height: auto;
 }
 
+#close_btn {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
+#close_btn #icon_close_btn {
 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

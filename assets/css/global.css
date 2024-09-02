@@ -8,7 +8,7 @@ body{
 }
 
 @media screen and (min-width: 992px){
-    .content{
+    #content{
         display: flex;
         max-width: 992px;
         margin: 1rem auto;
@@ -16,10 +16,9 @@ body{
         border-radius: 1rem;
     }
 }
-.content {
+#content {
     display: flex;
     padding: 0;
     background-color: #fff;
     height: 100vh;
-    position: relative;
 }

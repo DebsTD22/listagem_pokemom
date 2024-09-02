@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="content">
+    <section id="content">
         <nav id="sidebar">
             <div id="sidebar_content">
                 <div id="user">
@@ -30,7 +30,7 @@
                     <p id="user_infos">User</p>
                 </div>
                 <div id="side_itens">
-                   <p class="side_itens active">
+                   <p class="side_itens" class="active">
                         <a href="#">
                             <i class="fa-solid fa-house"></i>
                             <span class="item_description">Home</span>
@@ -60,8 +60,11 @@
                         <span class="item_description">Notifications</span>
                     </a>
                     </p>
+                    
                 </div>
-                
+                <button id="close_btn">
+                    <i id="icon_close_btn" class="fa-solid fa-xmark"></i>
+                </button>
             </div>
             
             <div id="logout">
@@ -90,7 +93,19 @@
                         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"" alt="Bulbasaur">
                     </div>
                 </li>
+                <li class="pokemon">
+                    <span class="number">#001</span>
+                    <samp class="name">Bulbasaur</samp>
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">grass</li>
+                            <li class="type">poison</li>
+                        </ol>
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"" alt="Bulbasaur">
+                    </div>
+                </li>
             </ol>
+            
         </main>
         
     </section>
