@@ -20,5 +20,9 @@ body{
     display: flex;
     padding: 15px;
     background-color: #fff;
-    height: 100vh;
+    height: auto;
+}
+
+main {
+    margin: auto;
 }
