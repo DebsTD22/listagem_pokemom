@@ -9,7 +9,7 @@
 }
 
 .normal {
-    background-color: #a6a877;
+    background-color: #a6a877; 
 }
 
 .grass {
@@ -80,45 +80,46 @@
     background-color: #f9aec7;
 } 
 
-.pokemon{
+li {
     display: flex;
     flex-direction: column;
     margin: .5rem;
     padding: 1rem;
-    background-color: #49d0b0;
     border-radius: 1rem;
     right: 10px;
+    
 }
 
-.pokemon .name{
+.name{
     font-family: 'Roboto';
     color: #fff;
     margin-bottom: .25rem;
 }
 
-.pokemon .number {
+.number {
     color: #000;
     opacity: 0.3;
     text-align: right;
     font-size: .625rem;
 }
 
-.pokemon .detail {
+.detail {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.pokemon .detail .types {
+.detail .types {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.pokemon .detail .types .type {
-    background-color: #61e1ca;
-    color: #fff;
+.detail .types .type {
+    background-color: #fff;
+    opacity: .3;
+    color: #000;
     padding: .25rem .5rem;
     margin: .25rem 0;
     border-radius: 1rem;
@@ -126,28 +127,9 @@
     text-align: center;
 }
 
-.pokemon .detail img {
+.detail img {
     max-width: 70%;
     height: 70px;
-}
-
-.pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1rem;
-}
-
-.pagination button {
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: .625rem;
-    color: #fff;
-    background-color: #6c79db;
-    border: none;
-    border-radius: 1rem;
 }
 
 @media screen and (min-width: 375px){
